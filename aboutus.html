@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:500&display=swap" rel="stylesheet">
+    <style type="text/css">
+    @import url(css/aboutus.css);
+    @import url(css/top.css);
+    </style>
+    <style>
+    body{
+    margin:0px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    }
+    img {
+    width: 100%;
+    }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" >
+    $(window).scroll(function() {
+    if ( $(this).scrollTop() > 100){
+    $('.top-header').addClass(' C-header');
+    $('.top-list').addClass(' C-top-list');
+    } else {
+    $('.top-header').removeClass(' C-header');
+    $('.top-list').removeClass(' C-top-list');
+    }
+    });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="top-list">
+          <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+          <div class="L1"><a href="product.html"><img src="images/商品.png"></a></div>
+          <div class="L2"><a href="rank.html"><img src="images/排行.png"></a></div>
+          <div class="L3"><a href="aboutus.html"><img src="images/組員.png"></a></div>
+          <div class="L4">
+            <button class="button-login" onclick="document.getElementById('login').style.display='block'">
+            <img src="images/登入.png">
+            </button>
+          </div>
+          <!-- <div class="L4">如果登入顯示這段
+            <button class="button-login" onclick="document.getElementById('login').style.display='block'">
+            <img src="images/shopping-cart.png">
+            </button>
+            <div class="dropdown-content">
+              <a href="#">登出</a>
+            </div>
+          </div> -->
+        </div>
+        <div id="login" class="modal"><!-- 登入 -->
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="images/user.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="container-login">
+            <input type="email" placeholder="Enter Email" name="uname" required>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            
+            <button class="login" type="submit">Login</button>
+          </div>
+          <div class="container-login" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('singup').style.display='block'" class="cancelbtn">Sign up</button>
+          </div>
+        </form>
+      </div>
+      
+      <div id="singup" class="modal2"><!-- 註冊 -->
+      <form class="modal-content2" action="/action_page.php">
+        <div class="container2">
+          <h2>Sign Up</h2>
+          <hr>
+          <input type="email" placeholder="Enter Email" name="email"  required>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input type="text"  name="name" placeholder="Enter Name" required>
+          <input type="text"  onkeyup="value=value.replace(/[^\d]/g,'') "  name="phone"  placeholder="Enter Phone" required>
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('singup').style.display='none'" class="cancelbtn2">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script>
+    // Get the modal
+    var modal = document.getElementById('login');
+    window.onclick = function(event) {
+    if (event.target == modal) {
+    modal.style.display = "none";
+    }
+    }
+    </script>
+    <script>
+    // Get the modal
+    var modal2 = document.getElementById('singup');
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal2) {
+    modal2.style.display = "none";
+    }
+    }
+    </script>
+  </header>
+  <!--aboutus內容-->
+  <div class="back">
+    <div class="content">
+      <div class="team">
+        <div class="picture"><img style="border-radius: 50%;" src="images/picture1.jpg"></div>
+        <div class="introduction">
+          <div class="name">蔡羽農</div>
+          <a href="https://www.instagram.com/caiyunong__0901/" target="_blank" title="IG"><div class="link"><img src="images/IG.png"></a></div>
+          <a href="https://www.facebook.com/profile.php?id=100008267881466" target="_blank" title="FB"><div class="link"><img src="images/FB.png"></a></div><br>
+          <hr style="border-width: 3px; background-color: rgb(255,224,190); border-color: rgb(255,224,190)">
+          <div class="detail">綽號:農農<br>生日:1999.09.01<br>星座:處女座<br>興趣:喜歡健身、愛吃馬鈴薯做出來的料理</div>
+        </div>
+      </div>
+    </div>
+    <div class="content-2">
+      <div class="team">
+        <div class="picture_2"><img style="border-radius: 50%;" src="images/picture2.jpg"></div>
+        <div class="introduction_2">
+          <div class="name">胡嘉軒</div>
+          <a href="https://www.instagram.com/huhu3220/" target="_blank" title="IG"><div class="link"><img src="images/IG.png"></a></div>
+          <a href="https://www.facebook.com/profile.php?id=100003662905109" target="_blank" title="FB"><div class="link"><img src="images/FB.png"></a></div><br>
+          <hr  style="border-width: 3px; background-color: rgb(255,224,190); border-color: rgb(255,224,190) ; " >
+          <div class="detail">綽號:狐蒙<br>生日:1998.10.06<br>星座:天秤座<br>興趣:對音樂有興趣、喜歡畫圖</div>
+        </div>
+      </div>
+    </div>
+    <div class="content-3">
+      <div class="team">
+        <div class="picture_3"><img style="border-radius: 50%;" src="images/picture3.jpg"></div>
+        <div class="introduction">
+          <div class="name">林思妤</div>
+          <a href="https://www.instagram.com/siyu2247/" target="_blank" title="IG"><div class="link"><img src="images/IG.png"></a></div>
+          <a href="https://www.facebook.com/lin.erica.1" target="_blank" title="FB"><div class="link"><img src="images/FB.png"> </a></div><br>
+          <hr style="border-width: 3px; background-color: rgb(255,224,190); border-color: rgb(255,224,190)">
+          <div class="detail">綽號:思思<br>生日:1998.12.16<br>星座:射手座<br>興趣:喜歡打籃球、也會彈吉他 </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-4">
+      <div class="team">
+        <div class="picture_4"><img style="border-radius: 50%;" src="images/picture4.jpg"></div>
+        <div class="introduction_2">
+          <div class="name">陳韻如</div>
+          <a href="https://www.instagram.com/yunru._.chen/" target="_blank" title="IG"><div class="link"><img src="images/IG.png"></a></div>
+          <a href="https://www.facebook.com/profile.php?id=100000445410466" target="_blank" title="FB"><div class="link"><img src="images/FB.png"></a></div><br>
+          <hr  style="border-width: 3px; background-color: rgb(255,224,190); border-color: rgb(255,224,190) ;">
+          <div class="detail">綽號:小花<br>生日:1999.08.30<br>星座:處女座<br>興趣:喜歡畫畫、各種美麗的事物 </div>
+        </div>
+      </div>
+    </div>
+     <script type="text/javascript">
+          $(function(){
+          $(window).scroll(function () {
+          var scrollVal = $(this).scrollTop();
+          $("span.qScrollTop").text(scrollVal);
+          if($(this).scrollTop() > 150){
+          $('.content-2').addClass('content-2-1');
+          
+          }
+          if($(this).scrollTop() > 450){
+          $('.content-3').addClass('content-3-1');
+          
+          }
+          if($(this).scrollTop() > 850){
+          $('.content-4').addClass('content-4-1');
+          
+          }
+          });
+          });
+          </script>
+    <div class="content_2">
+      <div class="Feedback">
+        <div class="fbt">回饋我們</div>
+        <hr style="width:60%; border-width: 3px; background-color: rgb(255,224,190); border-color: rgb(255,224,190) ;">
+        <form>
+          <div class="form_frame">
+            <input type="text" placeholder="請輸入姓名" name="from_name" class="fbn" required>
+            <br>
+            <input type="email" placeholder="請輸入Email" name="email" class="fbn" required >
+            <br>
+            <textarea name="back" cols="20" placeholder="歡迎給予我們建議" rows="2" wrap="hard" class="fbr"></textarea>
+            <br>
+            <input type="submit" class="buttom_1" value="送出" >
+            <input type="reset" class="buttom_2" value="清除" >
+          </div>
+        </form>
+      </div>
+    </div> 
+    <div class="footer footer2"">
+          Copyright@YuNung ChiaHsuan YunRu SsuYu<br>
+          DONUT COMPANY
+        </div>
+  </div>
+</body>
+</html>

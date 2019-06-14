@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Introduce</title>
+    <style type="text/css">
+    @import url(css/introduce.css);
+    @import url(css/top.css);
+    </style>
+    <style>
+    body{
+    margin:0;
+    }
+    img {
+    width: 100%;
+    }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:500&display=swap" rel="stylesheet">
+    <script type="text/javascript" >
+    $(window).scroll(function() {
+    if ( $(this).scrollTop() > 100){
+    $('.top-header').addClass(' C-header');
+    $('.top-list').addClass(' C-top-list');
+    } else {
+    $('.top-header').removeClass(' C-header');
+    $('.top-list').removeClass(' C-top-list');
+    }
+    });
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="top-list">
+          <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+          <div class="L1"><a href="product.html"><img src="images/商品.png"></a></div>
+          <div class="L2"><a href="rank.html"><img src="images/排行.png"></a></div>
+          <div class="L3"><a href="aboutus.html"><img src="images/組員.png"></a></div>
+          <div class="L4">
+            <button class="button-login" onclick="document.getElementById('login').style.display='block'">
+            <img src="images/登入.png">
+            </button>
+          </div>
+          <!-- <div class="L4">如果登入顯示這段
+            <button class="button-login" onclick="document.getElementById('login').style.display='block'">
+            <img src="images/shopping-cart.png">
+            </button>
+            <div class="dropdown-content">
+              <a href="#">登出</a>
+            </div>
+          </div> -->
+        </div>
+        <!-- 登入 -->
+        <div id="login" class="modal">
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="images/user.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container-login">
+              <input type="email" placeholder="Enter Email" name="uname" required>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              
+              <button class="login" type="submit">Login</button>
+            </div>
+            <div class="container-login" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('singup').style.display='block'" class="cancelbtn">Sign up</button>
+            </div>
+          </form>
+        </div>
+        <!-- 註冊 -->
+        <div id="singup" class="modal2">
+          <form class="modal-content2" action="/action_page.php">
+            <div class="container2">
+              <h2>Sign Up</h2>
+              <hr>
+              <input type="email" placeholder="Enter Email" name="email" required>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <input type="text"  name="name" placeholder="Enter Name">
+              <input type="text"  onkeyup="value=value.replace(/[^\d]/g,'') "  name="phone"  placeholder="Enter Phone" required>
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('singup').style.display='none'" class="cancelbtn2">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <script>
+        
+        var modal = document.getElementById('login');
+        window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+        }
+        </script>
+        <script>
+        
+        var modal2 = document.getElementById('singup');
+        
+        window.onclick = function(event) {
+        if (event.target == modal2) {
+        modal2.style.display = "none";
+        }
+        }
+        </script>
+      </header>
+      <div class="introduce">
+        <div class="good">
+          <div class="photo"><!-- 資料庫讀圖片 --><img src="images/donut10.png" >
+            <!--平均星星-->
+            <div class="avge"><span>4.5</span></div>
+          </div>
+          <div class="context">
+            <div class="name">草莓甜甜圈<hr style="border-width: 1px; background-color: #FF8385; border-color: #FF8385"></div> <!-- 資料庫讀商品名稱 --><br>
+            <div class="txt">
+              酸酸甜甜的草莓巧克力，均勻的散佈在原味甜甜圈上，讓你重新感受初戀的感覺。</div><!-- 資料庫讀內容 -->
+              <div class="num">
+                <form method="">選擇數量:
+                  <select name="num">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </form>
+                <div class="sum">剩餘數量：10</div><!-- 資料庫讀剩餘數量預設每個都10個 -->
+              </div>
+              <div class="money">NT.100<!-- 資料庫讀價錢 -->
+              <div class="btn">
+                <button type="submit" class="button" style="vertical-align:middle;" onclick="alert('已加到購物車')"><span>BUY</span></button>
+              </div>
+            </div>
+          </div><br>
+          
+        </div>
+        <!-- 留言板 -->
+        <div class="comment">
+          <div class="comment-title">COMMENTS<hr style="border-width: 2px; background-color: #75D1C4;border-color: #75D1C4;"></div>
+          <div class="messagebox">
+            <div class="mesbox">
+              <span class="mesword">我要留言</span>
+              <form action="" method="post">
+                <br>
+                <input type="text" placeholder="Name" name="name">
+                <textarea name="message" placeholder="Leave a message for 150 words" class="textarea"  wrap=physical  onKeyDown="checkMaxInput(this.form)" onKeyUp="checkMaxInput(this.form)" required></textarea>
+                <div class="like">
+                  <input type="radio" id="scoreId_1" class="score score_1" name="score" value="1"/>
+                  <label for="scoreId_1" class="star star_1"></label>
+                  <input type="radio" id="scoreId_2" class="score score_2" name="score" value="2"/>
+                  <label for="scoreId_2" class="star star_2"></label>
+                  <input type="radio" id="scoreId_3" class="score score_3" name="score" value="3"/>
+                  <label for="scoreId_3" class="star star_3"></label>
+                  <input type="radio" id="scoreId_4" class="score score_4" name="score" value="4"/>
+                  <label for="scoreId_4" class="star star_4"></label>
+                  <input type="radio" id="scoreId_5" class="score score_5" name="score" value="5"/>
+                  <label for="scoreId_5" class="star star_5"></label>
+                </div>
+                <input type="submit" name="submit" value="送出" class="submit">
+              </form>
+              <script>
+              maxLen = 150;
+              function checkMaxInput(form) {
+              if (form.message.value.length > maxLen){
+              form.message.value = form.message.value.substring(0, maxLen);
+              alert("超過150字");
+              }
+              
+              else form.remLen.value = maxLen - form.message.value.length;
+              }
+              </script>
+            </div>
+          </div>
+          <div class="message">
+            <div class="icon"><img src="images/aa.png"></div>
+            <div class="love">評分:5顆星</div><!-- 資料庫讀星星數 -->
+            <div class="word">好吃</div><!-- 資料庫讀評論 -->
+          </div>
+          <div class="message">
+            <div class="icon"><img src="images/aa.png"></div>
+            <div class="love">評分:3顆星</div><!-- 資料庫讀星星數 -->
+            <div class="word">一百字一百字一百一百字一百字一百一百字一百字一百一百字一百字一百一百字一百字一百一百字一百字一百一百字一百字一百一百字一百字一百一百字一百字一百一百字一百字一百一百字一百字一百一百字一百字一百一百一百百字一百一百字一百字一百一百字一百字一百一百字一百字一百一百一百百字一百一百字一百字一百一百一百一百</div><!-- 資料庫讀評論 -->
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="footer footer2"">
+  Copyright@YuNung ChiaHsuan YunRu SsuYu<br>
+  DONUT COMPANY
+</div>
+  </body>
+</html>

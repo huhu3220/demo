@@ -1,0 +1,309 @@
+.C-top-list{
+  margin-top: -28px !important;
+}
+.logo
+{
+  position: absolute;
+}
+.L1
+{
+  margin-left: 65% !important;
+}
+.member
+{
+	display: inline-block;
+	/*background-color: rgb(255,229,166);*/
+	background-color: rgb(255,224,190);
+	width: 100%;
+	
+	margin-top: 100px;
+	text-align: center;
+}
+
+.left
+{
+	display: inline-block;
+	width: 23%;
+	height: 700px;
+	background-color: rgb(248,248,248);
+	/*background-color: rgb(255,198,154);*/
+	margin-top: 80px;
+	vertical-align: top;
+	overflow-x:hidden; 
+}
+.right
+{
+	display: inline-block;
+	width: 48%;
+	height: 700px;
+	background-color: rgb(248,248,248);
+	margin-top: 80px;
+	margin-left: 15px;
+	overflow: scroll;
+	overflow-x:hidden;
+	vertical-align: top;
+
+}
+.img
+{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	margin-top: 40px;
+	background-color:  rgb(255,229,166);
+	
+}
+.img2
+{
+	width: 100%;
+	border-radius: 100px;
+
+}
+.name
+{
+
+	font-size:24px;
+	font-family:NSimSun;
+	margin-top: 20px;
+	color: rgb(210,71,70);
+}
+.context
+{
+	font-size:20px;
+	font-family:NSimSun;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	line-height: 48px;
+	color: rgb(210,71,70);
+}
+  .button {
+  
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 120px;
+  letter-spacing: 4px;
+  font-size:16px;
+  font-weight: bold;
+}
+
+.button1 {
+  background-color: white; 
+  color: rgb(252,115,114);
+  border: 3px solid rgb(252,115,114);
+}
+.button1:hover {
+  background-color: rgb(210,71,70);
+  border: 3px solid rgb(210,71,70);
+  color: white;
+}
+.button2 {
+  background-color: rgb(210,71,70); 
+  color: #fff;
+  border: 3px solid rgb(210,71,70);
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.cart-word
+{
+	display: inline-block;
+	font-size: 34px;
+	font-family:NSimSun;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	letter-spacing: 5px;
+	font-weight: bold;
+}
+.cart
+{
+	display: inline-block;
+	width: 85%;
+	height: 150px;
+	background-color: rgb(255,229,166);
+	margin-top: 20px;
+	font-family:NSimSun;
+	font-size: 18px;
+	text-align: left;
+	padding-top: 30px;
+	padding-left: 20px;
+	line-height: 30px;
+}
+.clear
+{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	float: right;
+	font-size: 26px;
+	color: rgb(231,110,084);
+	font-weight: bold;
+	margin-right: 15px;
+	margin-top: -15px;
+	position: relative;
+	cursor: pointer;
+	background-color: transparent;
+	border-width: 0px;
+}
+.clear:hover
+{
+	color: rgb(213,83,056);
+}
+input[type=text], input[type=password],input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  /*border: 1px solid #ccc;*/
+  box-sizing: border-box;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container-login {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.rewrite {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  overflow: hidden;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.check
+{
+  background-color: rgb(252,115,114);
+  text-align: center;
+  text-decoration: none;
+  text-align: center;
+  border-width: 0px;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  font-family:NSimSun;
+}
+.check:hover
+{
+	background-color: rgb(255,79,79);
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+hr
+{
+	width: 90%;
+	margin-top: 25px;
+}
+.pay
+{
+	display: inline-block;
+	width: 85%;
+	height: 100px;
+	text-align: left;
+	font-family:NSimSun;
+	font-size: 18px;
+	letter-spacing: 3px;
+	line-height: 30px;
+}
+.buybutton {
+ 
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 150px;
+  letter-spacing: 4px;
+  font-size:16px;
+  font-weight: bold;
+
+}
+
+.buybutton1 {
+  background-color: rgb(210,71,70); 
+  color: #fff;
+  border: 3px solid rgb(210,71,70);
+}
+.buyer2
+{
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+.buyer3
+{
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}

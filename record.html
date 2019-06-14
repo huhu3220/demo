@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Member</title>
+		<style type="text/css">
+		@import url(css/member.css);
+		@import url(css/top.css);
+		</style>
+		<style>
+		body{
+		margin:0;
+		}
+		img {
+		width: 100%;
+		}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script src="jquery-3.3.1.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:500&display=swap" rel="stylesheet">
+		<script type="text/javascript" >
+			$(window).scroll(function() {
+			if ( $(this).scrollTop() > 100){
+			$('.top-header').addClass(' C-header');
+			$('.top-list').addClass(' C-top-list');
+			} else {
+			$('.top-header').removeClass(' C-header');
+			$('.top-list').removeClass(' C-top-list');
+			}
+			});
+		</script>
+	</head>
+	<body>
+		
+		<header>
+			<div class="top-header"><!--最上面的選單-->
+			<div class="top-list">
+			<div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+			<div class="L1"><a href="product.html"><img src="images/商品.png"></a></div>
+            <div class="L2"><a href="rank.html"><img src="images/排行.png"></a></div>
+            <div class="L3"><a href="aboutus.html"><img src="images/組員.png"></a></div>
+				<div class="L4">
+					<button class="button-login" onclick="document.getElementById('login').style.display='block'">
+					<img src="images/登入.png">
+					</button>
+				</div>
+				<!-- <div class="L4">如果登入顯示這段
+								<button class="button-login" onclick="document.getElementById('login').style.display='block'">
+								<img src="images/shopping-cart.png">
+								</button>
+								<div class="dropdown-content">
+												<a href="#">登出</a>
+								</div>
+				</div> -->
+			</div>
+			<!--  登入 -->
+			<div id="login" class="modal">
+				<form class="modal-content animate" action="/action_page.php">
+					<div class="imgcontainer">
+						<span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+						<img src="images/user.png" alt="Avatar" class="avatar">
+					</div>
+					<div class="container-login">
+						<input type="email" placeholder="Enter Email" name="uname" required>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						
+						<button class="login" type="submit">Login</button>
+					</div>
+					<div class="container-login" style="background-color:#f1f1f1">
+						<button type="button" onclick="document.getElementById('singup').style.display='block'" class="cancelbtn">Sign up</button>
+					</div>
+				</form>
+			</div>
+			<!-- 註冊 -->
+			<div id="singup" class="modal2">
+				<form class="modal-content2" action="/action_page.php">
+					<div class="container2">
+						<h1>Sign Up</h1>
+						<hr>
+						<input type="email" placeholder="Enter Email" name="email" required>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						<input type="text"  name="name" placeholder="Enter Name">
+						<input type="text"  onkeyup="value=value.replace(/[^\d]/g,'') "  name="phone"  placeholder="Enter Phone" required>
+						<div class="clearfix">
+							<button type="button" onclick="document.getElementById('singup').style.display='none'" class="cancelbtn2">Cancel</button>
+							<button type="submit" class="signupbtn">Sign Up</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<script>
+			
+			var modal = document.getElementById('login');
+			window.onclick = function(event) {
+			if (event.target == modal) {
+			modal.style.display = "none";
+			}
+			}
+			</script>
+			<script>
+			
+			var modal2 = document.getElementById('singup');
+			
+			window.onclick = function(event) {
+			if (event.target == modal2) {
+			modal2.style.display = "none";
+			}
+			}
+			</script>
+		</header>
+			<div class="member">
+				<div class="left">
+					<div class="img"><img class="img2"src="images/aa.png"></div>
+					<div class="name">Name</div><!-- 資料庫讀會員名字 -->
+					<div class="context">Email:@@@@@@@@@@<br>電話:@@@@@@@@@@@<br></div><!-- 資料庫讀內容 -->
+					<div>
+						<button type="submit" class="button button1" onclick="document.getElementById('rewrite').style.display='block'">修改資料</button>
+						<a href="record.html"><button class="button button1" >購買紀錄</button></a>
+					</div>
+				</div>
+				<div id="rewrite" class="rewrite"><!-- 修改會員資料 -->
+				<form class="modal-content animate" action="/action_page.php">
+					<div class="imgcontainer">
+						<span onclick="document.getElementById('rewrite').style.display='none'" class="close" title="Close Modal">&times;</span>
+					</div>
+					<div class="container-login">
+						<input type="text" placeholder="Modify Name" name="uname" required>
+						<input type="password" placeholder="Modify Password" name="psw" required>
+						<input type="text"  onkeyup="value=value.replace(/[^\d]/g,'') "  name="phone"  placeholder="Modify Phone" required>
+						<button class="check" type="submit">確定</button>
+					</div>
+				</form>
+				</div>
+				<div class="right">
+					<div class="cart-word">購買紀錄</div><br>
+					<div class="cart"><!-- 資料庫讀資料 -->
+						抹茶巧克力甜甜圈*1、七彩甜甜圈*1<br>
+						總金額:120元
+					</div>
+					<hr style="border-width: 1px; background-color: rgb(230,230,230); border-color: rgb(230,230,230);">
+					<a href="member.html"><button class="button button2" >回到購物車</button></a>
+				</div>
+				<div class="footer footer2"">
+					Copyright@YuNung ChiaHsuan YunRu SsuYu<br>
+					DONUT COMPANY
+				</div>
+			</div>
+</body>
+</html>
