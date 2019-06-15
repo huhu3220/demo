@@ -46,33 +46,51 @@
 	width: 65px;
 	height: 20px;
 	display: inline-block;
-	margin-left:50%;
+	margin-left:45%;
 	margin-top: 58px;
 	cursor: pointer;
+  position: fixed;
+ 
 }
 .L2{
 	width: 65px;
 	height: 20px;
 	display: inline-block;
-	margin-left:75px;
+	margin-left:52%;
 	margin-top: 58px;
 	cursor: pointer;
+  position: fixed;
+  
 }
 .L3{
 	width: 65px;
 	height: 20px;
 	display: inline-block;
-	margin-left:75px;
+	margin-left:60%;
 	margin-top:58px;
 	cursor: pointer;
+  position: fixed;
+  
 }
 .L4{
 	width: 80px;
 	height: 24px;
 	display: inline-block;
-	margin-left:65px;
+	margin-left:75%;
 	margin-top: 58px;
 	cursor: pointer;
+  position: fixed;
+}
+.L5
+{
+  width: 80px;
+  height: 24px;
+  display: inline-block;
+  margin-left:68%;
+  margin-top: 58px;
+  cursor: pointer;
+  position: fixed;
+  
 }
 
 a

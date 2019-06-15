@@ -9,6 +9,22 @@
 {
   margin-left: 65% !important;
 }
+.L2
+{
+  margin-left: 71% !important;
+}
+.L3
+{
+  margin-left: 77% !important;
+}
+.L4
+{
+  margin-left: 89% !important;
+}
+.L5
+{
+  margin-left: 83% !important;
+}
 .product
 {
 	width: 75%;
@@ -177,7 +193,7 @@
   font-size: 16px !important;
   background-color: #fff  !important;
   padding: 12px 20px 12px 40px !important;
-  background-image: url(images/search.png)  !important;
+  background-image: url(../images/search.png)  !important;
   background-size: 5%  !important;
   background-repeat: no-repeat !important;
   background-position: 10px 12px !important;
