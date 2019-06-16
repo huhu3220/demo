@@ -113,7 +113,7 @@
 	display: inline-block;
 	margin-top: 50px;
 	width: 75%;
-	height: 370px;
+	height: 400px;
 	background-color:white;
 	text-align: center;
 	border-color:rgb(255,224,190);
@@ -209,6 +209,7 @@
 	margin-left: 100px;
 	text-align: center;
 	vertical-align: top;
+	
 
 }
 .name

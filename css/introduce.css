@@ -250,7 +250,7 @@
 	display: inline-block;
 	width: 100%;
 	background-color: rgb(245,245,245);
-	height: 200px;
+	height: 220px;
 	margin-top: 30px;
 	border-radius: 35px;
 
@@ -291,12 +291,22 @@
 	margin-left: 150px;
 	margin-top: 10px;
 }
-
+.namea
+{
+	display: inline-block;
+	width: 75%;
+	font-size:18px;
+	text-align: left;
+	font-family:NSimSun;
+	letter-spacing: 3px;
+	margin-left: 150px;
+	margin-top: 30px;
+}
 .like{
 	position: relative;
 	width: 200px;
 	height: 50px;
-	background: url("images/like3.png") repeat-x;
+	background: url("../images/like3.png") repeat-x;
 	background-size: 40px 40px;
 	overflow: hidden;
 	margin-top: 5px;
@@ -307,7 +317,7 @@
 	height: 40px;
 	width: 40px;
 	position: absolute;
-}
+}..
 .star{
 	z-index: 2;
 }
@@ -331,7 +341,7 @@
 }
 .star:hover {
 	cursor: pointer;
-	background: url("images/like.png") repeat-x;
+	background: url("../images/like.png") repeat-x;
 	background-size: 40px 40px;
 	left: 0;
 	z-index: 1;
@@ -353,7 +363,7 @@
 }
 
 .score:checked + .star {
-	background: url("images/like.png") repeat-x;
+	background: url("../images/like.png") repeat-x;
 	background-size: 40px 40px;
 	left: 0;
 }
@@ -381,5 +391,5 @@
 	font-family:NSimSun;
 	letter-spacing: 3px;
 	margin-left: 150px;
-	margin-top: 40px;
+	margin-top: 10px;
 }

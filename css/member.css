@@ -103,7 +103,7 @@
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   cursor: pointer;
-  width: 110px;
+  width: 100px;
   letter-spacing: 4px;
   font-size:14px;
   font-weight: bold;
@@ -147,9 +147,25 @@
 	font-family:NSimSun;
 	font-size: 18px;
 	text-align: left;
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-left: 20px;
 	line-height: 30px;
+  overflow-x:hidden; 
+
+}
+.cart.c
+{
+	
+	height:350px;
+	
+
+}
+.cart.a
+{
+	
+	height:200px;
+	
+
 }
 .clear
 {
